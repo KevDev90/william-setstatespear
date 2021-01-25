@@ -8,9 +8,9 @@ export default function PoemListPage() {
       <ul className='PoemList'>
         {POEMS.map(poem =>
           <li key={poem.id}>
-            <a href={`/poem/${poem.id}`}>
+          <Link to={`/poem/${poem.id}`}>  
               {poem.title}
-            </a>
+              </Link>
           </li>
         )}
       </ul>
